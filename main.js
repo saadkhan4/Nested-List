@@ -1,8 +1,11 @@
+// Getting list via ClassName
 const getList = document.getElementsByClassName("list");
 
+// Created First Unordered list
 const first_ul = document.createElement("ul");
 getList[0].appendChild(first_ul);
 
+// Inserting data.
 const firstList = document.createElement("li");
 firstList.innerText = "BMW";
 first_ul.appendChild(firstList);
@@ -15,9 +18,11 @@ const thirdList = document.createElement("li");
 thirdList.innerText = "MERCEDES BENZ";
 first_ul.appendChild(thirdList);
 
+// Created Nested Unordered List.
 const nested_ul = document.createElement("ul");
 secondList.appendChild(nested_ul);
 
+// Inserting data into nested list.
 const fourth_list = document.createElement("li");
 fourth_list.innerText = "HONDA";
 nested_ul.appendChild(fourth_list);
